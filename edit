@@ -1,0 +1,14 @@
+#/usr/bin/env bash
+
+action=$1
+
+function usage {
+	echo "  $(basename $0)"
+	echo "    Opens tasks file in vi"
+	echo ""
+	exit
+}
+
+[ "$action" = "usage" ] && usage
+
+vi $TODO_FILE
