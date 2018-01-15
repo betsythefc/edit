@@ -11,4 +11,9 @@ function usage {
 
 [ "$action" = "usage" ] && usage
 
-vi $TODO_FILE
+if [ -z $EDITOR ]
+then
+    vi $TODO_FILE
+else
+    $EDITOR $TODO_FILE
+fi

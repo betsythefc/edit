@@ -1,5 +1,5 @@
 # edit
-Version 0.1.0
+Version 0.2.0
 
 Add-on for todo.sh to open todo.txt in vi
 
@@ -8,6 +8,13 @@ Add-on for todo.sh to open todo.txt in vi
 ```
 cd ~/.todo.actions.d
 git clone git@github.com:betsythefc/edit.git
+```
+
+set the EDITOR variable to use a different editor than vi.
+
+```
+echo "export EDITOR='/path/to/editor'" >> ~/.bash_profile
+source ~/.bash_profile
 ```
 
 ## Usage
